@@ -1,15 +1,12 @@
 import React from 'react'
 
-const LoginButton = ({ onClick, className, text }) => {
+const LoginButton = ({ onClick, className, text, img }) => {
     return (
-        <button type="button" onClick={onClick} className={className}>{text}</button>
+        <button type="button" onClick={onClick} className={className}>
+            {img ? <img src="./images/구글사진.svg" alt="" className='w-auto' /> : null}{text}
+        </button>
     )
 }
-// const InputField = ({ type, placeholder }) => {
-//     return (
-//         <input type={type} placeholder={placeholder}
-//             className='w-full bg-gray-800 rounded-lg '
-//         />
-//     )
-// }
 export default LoginButton
+
+// <img src="./images/구글사진.svg" alt="" />
