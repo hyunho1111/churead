@@ -1,25 +1,32 @@
 import React from 'react'
 
 const Homes = () => {
-    //logic
-
     //view
     return (
-        <div className='flex flex-col justify-center items-center w-375px h-877px'>
-            <div className='w-[375px] h-[75px] text-center'>
-                <img src="./images/logo.svg" alt="churead로고" />
-            </div>
-            <div className='container text-white w-[375px] h-[192px]'>1
-                <div className='container'>2
-                    <div className='container'>3</div>
-                    <div className='container'>4</div>
-                    <div className='container'>5</div>
+        <div className='px-6 boredr-t border-churead-gray-300 border-opacity-15 pt-3'>
+            <div className='flex items-start gap-3'>
+                {/*프로필 이미지 역영*/}
+                <div className='w-10 rounded-full overflow-hidden mt-1'>
+                    <img src="./images/logo.svg" alt="사용자 프로필 이미지" />
+                </div>
+                <div className='min-w-full'>
+                    <div className='flex items-center'>
+                        <span className='font-bold'>special</span>
+                    </div>
+                    <div className='pt-1 text-sm'>
+                        <textarea
+                            rows={4}
+                            placeholder='문구를 작성하세요'
+                            className='w-full placeholder-churead-gray-300 placeholder-opacity-60 text -churead-gray-400 bg-transparent outline-none resize-none'
+                        ></textarea>
+
+                    </div>
                 </div>
             </div>
-            <div className='container'><p>1</p></div>
-            <div className='container'><p>1</p></div>
-        </div >
+        </div>
     )
+
 }
 
 export default Homes
+
